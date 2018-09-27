@@ -1,6 +1,8 @@
 class KittensController < ApplicationController
   before_action :set_kitten, only: [:show, :update, :destroy]
 
+  # Porfa hagan todos los controllers iguales a este
+
   # GET /kittens
   def index
     @kittens = Kitten.all
