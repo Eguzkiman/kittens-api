@@ -5,7 +5,6 @@ class CreateKittens < ActiveRecord::Migration[5.2]
       t.integer :cuteness
       t.string :owner
       t.boolean :explodes
-
       t.timestamps
     end
   end
