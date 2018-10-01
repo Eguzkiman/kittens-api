@@ -7,7 +7,7 @@ class KittensController < ApplicationController
   def index
     @kittens = Kitten.all
 
-    render json: @kittens
+    render json: {kittens: @kittens}
   end
 
   # GET /kittens/1
