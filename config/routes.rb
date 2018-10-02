@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :turtles
   resources :companies
   resources :puppies
   resources :kittens

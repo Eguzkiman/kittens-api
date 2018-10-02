@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_01_204831) do
+ActiveRecord::Schema.define(version: 2018_10_02_154101) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,24 @@ ActiveRecord::Schema.define(version: 2018_10_01_204831) do
     t.integer "cuteness"
     t.string "color"
     t.string "owner"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "turtles", force: :cascade do |t|
+    t.string "name"
+    t.string "color"
+    t.float "radius"
+    t.boolean "lives_on_fresh_water"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "string"
+    t.string "last_name"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
