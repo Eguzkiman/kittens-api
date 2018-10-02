@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_02_154101) do
+ActiveRecord::Schema.define(version: 2018_10_02_224322) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,14 @@ ActiveRecord::Schema.define(version: 2018_10_02_154101) do
     t.string "color"
     t.float "radius"
     t.boolean "lives_on_fresh_water"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.date "birthday"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
